@@ -1,0 +1,12 @@
+feedback_id,asset_id,asset_code,prediction_id,feedback_date,was_prediction_correct,actual_failure_happened,actual_failure_mode,action_taken,timing_feedback,technician_comment
+FB-001,6,PACKAGING_001,101,2026-04-21T09:15:00+00:00,true,true,suction cup wear,Replaced suction cups and inspected vacuum line,correct,Prediction matched the real packaging pickup issue.
+FB-002,8,CONVEYOR_001,102,2026-04-23T14:05:00+00:00,true,false,conveyor misalignment,Aligned belt during planned stop,too_early,Warning was useful but no failure had occurred yet.
+FB-003,2,FEEDER_001,103,2026-04-26T07:40:00+00:00,false,true,low pressure blockage,Replaced filter and cleaned feeder restriction,too_late,Low flow developed before the prediction was reviewed.
+FB-004,3,IS_MACHINE_001,104,2026-04-28T11:30:00+00:00,true,true,bearing wear,Replaced bearing and corrected lubrication,correct,High vibration was confirmed during inspection.
+FB-005,1,FURNACE_001,105,2026-05-01T08:10:00+00:00,true,false,lubrication issue,Inspected lubrication and adjusted cooling airflow,correct,Inspection prevented overheating from becoming a shutdown.
+FB-006,5,INSPECTION_001,106,2026-05-03T16:20:00+00:00,true,true,camera contamination,Cleaned camera lens and recalibrated reject timing,correct,Prediction matched quality inspection instability.
+FB-007,7,PALLETIZER_001,107,2026-05-05T12:45:00+00:00,false,true,motor overload,Reduced mechanical resistance and checked drive load,too_late,Motor overload alarms repeated before action was planned.
+FB-008,4,ANNEALING_LEHR_001,108,2026-05-07T10:00:00+00:00,true,false,cooling airflow imbalance,Adjusted zone fan and checked temperature control,too_early,Maintenance found early airflow imbalance only.
+FB-009,3,IS_MACHINE_001,109,2026-05-10T06:55:00+00:00,true,true,pneumatic valve sticking,Replaced sticking valve and checked section timing,correct,Technician confirmed repeated forming section fault.
+FB-010,6,PACKAGING_001,110,2026-05-12T13:35:00+00:00,true,true,seal kit degradation,Replaced seal kit and verified vacuum pressure,correct,Failure mode and timing were useful for shift planning.
+FB-B83D5B10,2,FEEDER_001,,2026-05-21T07:24:03.586487+00:00,true,true,suction cup mode,,too_early,too early

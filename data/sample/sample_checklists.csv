@@ -1,0 +1,6 @@
+checklist_id,asset_id,asset_code,source_type,title,checklist_item,summary
+CL-001,3,IS_MACHINE_001,checklist,Forming machine shutdown inspection,Bearing and lubrication check,Inspect bearing temperature lubrication line contamination and section vibration
+CL-002,6,PACKAGING_001,checklist,Packaging weekly inspection,Vacuum and suction cups,Inspect suction cups vacuum pump hoses guides and sealing station
+CL-003,8,CONVEYOR_001,checklist,Conveyor monthly inspection,Belt tracking and rollers,Inspect belt alignment roller wear accumulation zone and motor load
+CL-004,1,FURNACE_001,checklist,Furnace thermal inspection,Burner and flow check,Inspect burner condition thermal profile and cooling or flow restrictions
+CL-005,2,FEEDER_001,checklist,Feeder pneumatic inspection,Pressure and valve check,Inspect filter valve leakage pressure regulator and gob stability

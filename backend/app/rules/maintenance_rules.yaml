@@ -1,0 +1,257 @@
+rules:
+  - id: high_vibration_high_temperature
+    name: High vibration and high temperature
+    description: High vibration with high temperature suggests a mechanical or lubrication problem.
+    conditions:
+      all:
+        - field: vibration
+          operator: ">"
+          value: 8
+        - field: temperature
+          operator: ">"
+          value: 85
+    severity: high
+    findings:
+      - High vibration and high temperature detected
+    likely_causes:
+      - bearing wear
+      - shaft misalignment
+      - lubrication problem
+    recommended_actions:
+      - Inspect bearing condition
+      - Check lubrication level
+      - Check shaft alignment
+    tags:
+      - vibration
+      - thermal
+      - mechanical
+
+  - id: low_pressure_low_flow
+    name: Low pressure and low flow
+    description: Low pressure with low flow suggests restricted process movement or leakage.
+    conditions:
+      all:
+        - field: pressure
+          operator: "<"
+          value: 2.5
+        - field: flow
+          operator: "<"
+          value: 25
+    severity: high
+    findings:
+      - Low pressure and low flow detected
+    likely_causes:
+      - blockage
+      - leakage
+      - pump degradation
+      - valve restriction
+    recommended_actions:
+      - Inspect filter
+      - Check valves
+      - Inspect leakage points
+      - Check pump performance
+    tags:
+      - pressure
+      - flow
+      - process_restriction
+
+  - id: high_current_low_speed
+    name: High current and low speed
+    description: High current with low speed suggests overload or drivetrain restriction.
+    conditions:
+      all:
+        - field: current_value
+          operator: ">"
+          value: 18
+        - field: speed
+          operator: "<"
+          value: 1000
+    severity: critical
+    findings:
+      - High current and low speed detected
+    likely_causes:
+      - motor overload
+      - mechanical blockage
+      - drive issue
+      - gearbox resistance
+    recommended_actions:
+      - Inspect motor load
+      - Check drive system
+      - Inspect coupling and gearbox
+      - Check for mechanical blockage
+    tags:
+      - electrical
+      - drive
+      - mechanical
+
+  - id: high_temperature_only
+    name: High temperature
+    description: High temperature alone may indicate cooling, lubrication, overload, or sensor problems.
+    conditions:
+      all:
+        - field: temperature
+          operator: ">"
+          value: 90
+    severity: medium
+    findings:
+      - High temperature detected
+    likely_causes:
+      - cooling issue
+      - lubrication issue
+      - overload
+      - friction
+    recommended_actions:
+      - Check cooling system
+      - Check lubrication
+      - Reduce load if needed
+      - Inspect thermal sensor
+    tags:
+      - thermal
+      - cooling
+
+  - id: high_vibration_only
+    name: High vibration
+    description: High vibration alone may indicate looseness, imbalance, bearing wear, or misalignment.
+    conditions:
+      all:
+        - field: vibration
+          operator: ">"
+          value: 9
+    severity: high
+    findings:
+      - High vibration detected
+    likely_causes:
+      - imbalance
+      - looseness
+      - bearing wear
+      - misalignment
+    recommended_actions:
+      - Inspect mounting bolts
+      - Check alignment
+      - Inspect bearing
+      - Balance rotating parts
+    tags:
+      - vibration
+      - mechanical
+
+  - id: low_flow
+    name: Low flow
+    description: Low flow can indicate blockage, pump issue, closed valve, or process restriction.
+    conditions:
+      all:
+        - field: flow
+          operator: "<"
+          value: 20
+    severity: medium
+    findings:
+      - Low flow detected
+    likely_causes:
+      - blockage
+      - pump issue
+      - valve closed
+      - process restriction
+    recommended_actions:
+      - Check flow path
+      - Inspect pump condition
+      - Verify valve position
+      - Remove process restriction
+    tags:
+      - flow
+      - process_restriction
+
+  - id: repeated_alarms
+    name: Repeated alarms
+    description: Repeated alarms suggest unresolved abnormal operation or unstable sensor behavior.
+    conditions:
+      all:
+        - field: alarm_count_24h
+          operator: ">"
+          value: 5
+    severity: high
+    findings:
+      - Repeated alarms detected in the last 24 hours
+    likely_causes:
+      - repeated abnormal operation
+      - unstable sensor behavior
+      - unresolved maintenance issue
+    recommended_actions:
+      - Review latest alarms
+      - Inspect asset history
+      - Create follow-up maintenance action
+    tags:
+      - alarms
+      - reliability
+
+  - id: overdue_preventive_maintenance
+    name: Overdue preventive maintenance
+    description: Overdue preventive maintenance increases component wear and reliability risk.
+    conditions:
+      all:
+        - field: overdue_pm_days
+          operator: ">"
+          value: 0
+    severity: medium
+    findings:
+      - Preventive maintenance is overdue
+    likely_causes:
+      - maintenance interval exceeded
+      - component wear risk increasing
+    recommended_actions:
+      - Schedule maintenance immediately
+      - Review open work orders
+    tags:
+      - preventive_maintenance
+      - planning
+
+  - id: worsening_vibration_trend
+    name: Worsening vibration trend
+    description: A fast worsening vibration trend can indicate progressive mechanical degradation.
+    conditions:
+      all:
+        - field: vibration_trend_24h
+          operator: ">"
+          value: 1.5
+    severity: high
+    findings:
+      - Worsening vibration trend detected
+    likely_causes:
+      - progressive bearing wear
+      - increasing imbalance
+      - looseness developing
+    recommended_actions:
+      - Trend vibration hourly
+      - Inspect bearing and alignment within 48 hours
+    tags:
+      - trend
+      - vibration
+      - mechanical
+
+  - id: packaging_vacuum_issue
+    name: Packaging machine vacuum issue
+    description: Packaging machine low pressure and low flow can indicate vacuum system degradation.
+    conditions:
+      all:
+        - field: asset_type
+          operator: "=="
+          value: Packaging Machine
+        - field: pressure
+          operator: "<"
+          value: 3
+        - field: flow
+          operator: "<"
+          value: 30
+    severity: high
+    findings:
+      - Packaging machine vacuum issue detected
+    likely_causes:
+      - suction cup wear
+      - vacuum leakage
+      - seal kit degradation
+    recommended_actions:
+      - Inspect suction cups
+      - Inspect vacuum lines
+      - Inspect seal kit
+    tags:
+      - packaging
+      - vacuum
+      - pressure

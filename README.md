@@ -69,7 +69,10 @@ Important variables:
 
 - `API_PREFIX=/api/v1`
 - `BACKEND_PORT=8000`
-- `DATABASE_URL=postgresql://postgres:postgres@localhost:5432/predictive_maintenance`
+- `POSTGRES_USER=your_database_user`
+- `POSTGRES_PASSWORD=replace_with_a_strong_local_password`
+- `POSTGRES_DB=predictive_maintenance`
+- `DATABASE_URL=postgresql://your_database_user:replace_with_a_strong_local_password@localhost:5432/predictive_maintenance`
 - `MODEL_DIR=backend/saved_models`
 - `OPENAI_API_KEY=`
 - `ENABLE_LLM=false`

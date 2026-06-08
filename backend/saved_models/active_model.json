@@ -1,0 +1,18 @@
+{
+  "active_model": "isolation_forest_v1.joblib",
+  "scaler": "scaler_v1.joblib",
+  "model_type": "isolation_forest",
+  "version": "1.0.0",
+  "trained_at": "2026-05-19T07:52:08.944076+00:00",
+  "features": [
+    "vibration",
+    "temperature",
+    "pressure",
+    "current_value",
+    "speed",
+    "flow",
+    "runtime_hours"
+  ],
+  "target_type": "anomaly_detection",
+  "status": "trained"
+}

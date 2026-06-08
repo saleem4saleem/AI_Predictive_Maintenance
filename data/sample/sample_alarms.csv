@@ -1,0 +1,6 @@
+alarm_id,asset_id,asset_code,timestamp,severity,alarm_code,summary
+AL-001,3,IS_MACHINE_001,2026-05-01T11:20:00Z,high,VIB_HIGH,High vibration alarm repeated three times in one shift
+AL-002,6,PACKAGING_001,2026-05-01T12:10:00Z,medium,VAC_LOW,Vacuum pressure low on bottle pickup
+AL-003,8,CONVEYOR_001,2026-05-01T12:40:00Z,medium,CUR_HIGH,Current draw high during accumulation
+AL-004,1,FURNACE_001,2026-05-01T13:05:00Z,high,TEMP_HIGH,Furnace zone temperature above normal band
+AL-005,2,FEEDER_001,2026-05-01T13:30:00Z,medium,PRESS_LOW,Feeder pressure below target

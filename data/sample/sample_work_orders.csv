@@ -1,0 +1,6 @@
+work_order_id,asset_id,asset_code,source_type,title,failure_mode,summary,action_taken,downtime_hours
+WO-1001,3,IS_MACHINE_001,sap_work_order,IS machine high vibration,bearing wear,Repeated vibration on forming section linked to dry bearing and poor lubrication,Replaced bearing and cleaned lubrication line,4.5
+WO-1002,6,PACKAGING_001,sap_work_order,Packaging suction issue,worn suction cups,Intermittent bottle pickup failures caused by worn suction cups and vacuum leakage,Replaced suction cups and checked vacuum hose,2.0
+WO-1003,8,CONVEYOR_001,sap_work_order,Conveyor belt drift,conveyor misalignment,Belt tracking drift caused accumulation and current spikes,Aligned belt and adjusted rollers,3.0
+WO-1004,1,FURNACE_001,sap_work_order,Furnace overheating,overheating,Burner zone temperature drifted upward and flow dropped below target,Inspected burner and cleaned flow restriction,6.0
+WO-1005,2,FEEDER_001,sap_work_order,Feeder low pressure,low pressure,Low pneumatic pressure caused unstable gob delivery,Replaced leaking valve and checked filter,2.5

@@ -1,0 +1,41 @@
+history_id,component_id,asset_id,asset_code,component_code,date,work_order_id,failure_description,failure_cause,action_taken,replaced_part,downtime_hours,technician_note
+1,103,1,FURNACE_001,FUR-TEMP,2026-04-18,WO-10018,Zone temperature drift,Thermocouple drift,Calibrated thermocouple and verified control loop,Thermocouple,0.8,Temperature profile returned to normal after calibration
+2,102,1,FURNACE_001,FUR-REFRACTORY,2026-02-20,WO-10002,Hot spot found during inspection,Localized refractory wear,Performed refractory patch repair,Refractory patch kit,4.5,Plan full inspection at next furnace shutdown
+3,202,2,FEEDER_001,FDR-MOTOR,2026-04-11,WO-20011,Drive motor vibration elevated,Bearing wear,Replaced motor bearing and aligned coupling,Motor bearing,2.2,Vibration reduced after alignment
+4,205,2,FEEDER_001,FDR-GATE,2026-05-07,WO-20022,Low flow at feeder gate,Gate sticking due to buildup,Cleaned gate and lubricated slide,Gate wear plate,1.1,Flow recovered after cleaning
+5,301,3,IS_MACHINE_001,ISM-MOLDS,2026-03-05,WO-30014,Container defects from mold wear,Mold surface wear,Replaced blank and blow molds,Mold set,3.6,Replacement timing was correct based on inspection feedback
+6,301,3,IS_MACHINE_001,ISM-MOLDS,2025-12-04,WO-29982,Neck finish defects,Mold wear at finish area,Replaced worn mold insert,Mold insert,1.9,Technician noted replacement may have been slightly late
+7,304,3,IS_MACHINE_001,ISM-PNEUMATIC,2026-05-07,WO-30031,Low air pressure on section valves,Air leak at valve manifold,Replaced leaking fitting and tested valves,Pneumatic fitting,1.4,Pressure stabilized after leak repair
+8,304,3,IS_MACHINE_001,ISM-PNEUMATIC,2026-04-13,WO-30002,Slow cylinder response,Sticky valve spool,Cleaned valve and replaced seal kit,Valve seal kit,1.7,Monitor response time during next production run
+9,305,3,IS_MACHINE_001,ISM-LUBE,2026-05-11,WO-30038,Lubrication alarm and rising temperature,Blocked lubrication line,Cleared lubrication line and replaced filter,Lube filter,1.2,Inspection prevented overheating escalation
+10,306,3,IS_MACHINE_001,ISM-COOLING,2026-04-28,WO-30021,Low cooling flow on mold circuit,Blocked cooling nozzle,Cleaned cooling nozzle and flushed circuit,Cooling nozzle,0.9,Flow improved but repeat inspection advised
+11,309,3,IS_MACHINE_001,ISM-SHEAR,2026-04-19,WO-30009,Gob cut quality unstable,Shear blade wear,Replaced shear blades and reset timing,Shear blades,1.5,Timing corrected after blade replacement
+12,310,3,IS_MACHINE_001,ISM-CONTROL,2026-04-30,WO-30025,Intermittent drive fault,Cabinet fan failure,Replaced cabinet fan and reviewed alarms,Cabinet fan,0.7,No repeat drive fault after repair
+13,402,4,ANNEALING_LEHR_001,LEHR-FANS,2026-04-26,WO-40015,Cooling fan vibration elevated,Fan bearing wear,Replaced fan bearing and balanced impeller,Fan bearing,2.4,Temperature stability improved
+14,403,4,ANNEALING_LEHR_001,LEHR-TEMPCTRL,2026-04-29,WO-40018,Zone profile deviation,Temperature sensor drift,Calibrated zone sensor,Temperature sensor,0.6,Profile within control band after calibration
+15,405,4,ANNEALING_LEHR_001,LEHR-CHAIN,2026-05-01,WO-40022,Chain noise and slack,Chain stretch,Adjusted chain tension and inspected guide,Chain guide,1.3,Plan guide replacement if noise returns
+16,501,5,INSPECTION_001,INSP-CAMERA,2026-05-09,WO-50016,False rejects increased,Lens contamination,Cleaned camera lens and verified images,None,0.5,Reject rate returned to normal
+17,503,5,INSPECTION_001,INSP-REJECT,2026-05-06,WO-50012,Reject timing inconsistent,Pneumatic response delay,Adjusted reject timing and repaired air leak,Pneumatic tube,0.8,Reject accuracy improved
+18,505,5,INSPECTION_001,INSP-SENSORS,2026-05-02,WO-50009,Missed bottle trigger,Sensor contamination,Cleaned sensor array and validated trigger,None,0.4,Add cleaning to shift checklist
+19,605,6,PACKAGING_001,PKG-SUCTION,2026-05-02,WO-60018,Missed pickup and vacuum drop,Worn suction cups,Replaced suction cups and checked vacuum line,Suction cups,1.0,Prediction timing was useful and replacement was correct
+20,605,6,PACKAGING_001,PKG-SUCTION,2026-04-02,WO-60003,Intermittent pickup failure,Suction cup wear,Replaced worn cups,Suction cups,0.8,Technician noted interval may be slightly too long
+21,606,6,PACKAGING_001,PKG-SEAL,2026-04-20,WO-60008,Vacuum leakage at seal area,Seal kit degradation,Replaced seal kit and tested vacuum,Seal kit,1.6,Vacuum levels recovered after replacement
+22,607,6,PACKAGING_001,PKG-ALIGN,2026-05-08,WO-60025,Belt drift on internal transport,Conveyor guide misalignment,Adjusted belt tracking and guide rails,Guide rail insert,1.2,Timing feedback marked correct
+23,608,6,PACKAGING_001,PKG-PNEUMATIC,2026-05-07,WO-60022,Slow cylinder motion,Air leak at regulator,Replaced regulator fitting and leak tested,Fitting,0.9,Cylinder speed normalized
+24,601,6,PACKAGING_001,PKG-CASE-PACKER,2026-05-05,WO-60020,Case feed jam,Case magazine guide wear,Adjusted magazine and replaced guide,Magazine guide,1.4,Watch for repeat jams during high speed runs
+25,602,6,PACKAGING_001,PKG-WRAP,2026-05-06,WO-60021,Wrap misalignment,Adhesive temperature fluctuation,Adjusted temperature control and verified wrap timing,None,0.7,Quality checks passed after adjustment
+26,603,6,PACKAGING_001,PKG-STRAP,2026-04-30,WO-60012,Low strap tension,Tensioner wear,Adjusted tensioner and replaced wear pad,Tensioner wear pad,0.6,Continue monitoring strap quality
+27,307,3,IS_MACHINE_001,ISM-PUSHOUT,2026-03-12,WO-30018,Pushout timing drift,Mechanical pivot wear,Adjusted pushout timing and replaced worn pivot bushing,Pivot bushing,1.3,Timing correction reduced handling jams
+28,308,3,IS_MACHINE_001,ISM-DRIP,2026-02-05,WO-30005,Drip deflector contamination,Glass buildup on deflector,Cleaned deflector and corrected position,None,0.4,Add inspection to weekly checklist
+29,601,6,PACKAGING_001,PKG-CASE-PACKER,2026-03-18,WO-60005,Repeated case packer jams,Case rail misalignment,Corrected case packer alignment and tightened guides,Guide fasteners,1.1,Alignment should be checked before high volume runs
+31,101,1,FURNACE_001,FUR-BURNER,2026-05-06,WO-10026,Flame instability on burner row,Nozzle fouling,Cleaned burner nozzles and verified flame pattern,Burner nozzle,1.0,Combustion stabilized after cleaning
+32,104,1,FURNACE_001,FUR-COOLING,2026-04-28,WO-10021,Cooling flow alarm,Blocked strainer,Cleaned cooling strainer and checked pump flow,Strainer basket,0.9,Add strainer inspection to weekly route
+33,203,2,FEEDER_001,FDR-BELT,2026-04-27,WO-20017,Belt drive tension low,Chain stretch,Adjusted belt chain tension and checked alignment,None,0.7,Drive noise reduced after tension correction
+34,204,2,FEEDER_001,FDR-HOPPER,2026-05-10,WO-20025,Material bridging at hopper,Glass buildup,Cleared hopper throat and added cleaning check,None,0.6,Flow improved after blockage removal
+35,206,2,FEEDER_001,FDR-VIBRATION,2026-04-29,WO-20019,Vibration unit amplitude unstable,Loose mounting bolts,Tightened mounting bolts and checked eccentric weights,Mounting hardware,0.8,Amplitude returned to normal
+36,404,4,ANNEALING_LEHR_001,LEHR-ROLLERS,2026-04-10,WO-40008,Container travel skewed,Roller alignment drift,Realigned roller section and inspected bearings,None,1.5,Travel path corrected after alignment
+37,406,4,ANNEALING_LEHR_001,LEHR-HEATING,2026-04-27,WO-40011,Heating zone instability,Burner air ratio drift,Adjusted burner air ratio and verified zone profile,None,0.9,Zone profile stabilized
+38,501,5,INSPECTION_001,INSP-CAMERA,2026-04-12,WO-50006,Image calibration drift,Camera calibration error,Recalibrated camera and verified reference bottle,None,0.4,False rejects reduced after calibration
+39,502,5,INSPECTION_001,INSP-LIGHTING,2026-05-04,WO-50010,Lighting intensity low,Strobe degradation,Replaced weak strobe and cleaned light window,Strobe module,0.6,Lighting intensity restored
+40,506,5,INSPECTION_001,INSP-CONTROL,2026-04-25,WO-50004,Intermittent controller alarm,Cabinet cooling fan dust,Cleaned cabinet and checked fan airflow,None,0.5,No repeated alarm after cleaning
+30,604,6,PACKAGING_001,PKG-LABEL,2026-04-18,WO-60010,Rejected packs from label skew,Label sensor drift,Recalibrated labeling sensor and verified print position,None,0.5,Sensor calibration restored label placement
